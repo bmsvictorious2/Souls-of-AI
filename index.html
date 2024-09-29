@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tech Skill Vocational Institute</h1>
+        <h1>Test No 2</h1>
+        <div class="name-section">
+            <label for="studentName">Enter your name:</label>
+            <input type="text" id="studentName" placeholder="Your Name">
+        </div>
+
+        <!-- Display Student's Name -->
+        <p id="displayName"></p>
+
+        <!-- Question 1 (Yes/No using checkboxes) -->
+        <div class="question">
+            <p>1. which method in Azure Provide drag & drop interface for train your model?</p>
+            <input type="checkbox" id="Automated ML" value="Artificial intelligence">
+            <label for="artificialIntelligence">Automated ML</label>
+            
+            <input type="checkbox" id="Azure Machine Learning designer" value="Artical Intelligent">
+            <label for="articalIntelligent">Azure Machine Learning designer</label>
+        </div>
+        
+        <!-- Question 2 (Dropdown) -->
+        <div class="question">
+            <p>2.Data values that influence the prediction of a model are called:</p>
+            <select id="question2">
+                <option value="">--Select an answer--</option>
+                <option value="dependant variables">dependant variables</option>
+                <option value="features">features</option>
+                <option value="identifiers">identifiers</option>
+                <option value="labels">labels</option>
+            </select>
+        </div>
+          <!-- Question 3 (Dropdown) -->
+        
+          <div class="question">
+            <p><img src="regression.jpg" alt=""><br>Which type of model is the chart used to evaluate?</p>
+            <input type="radio" id="classification" name="workloadAI" value="classification">
+            <label for="classification">classification</label>
+            
+            <input type="radio" id="Regression" name="workloadAI" value="Regression">
+            <label for="Regression">Regression</label>
+            
+            <input type="radio" id="clustering" name="workloadAI" value="clustering">
+            <label for="clustering">clustering</label>
+        </div>
+        
+ <!-- Question 4 (Checkboxes) -->
+
+ <div class="question">
+    <p>4.You have a dataset that contains information about taxi journeys that occurred during a given period.
+        You need to train a model to predict the fare of a taxi journey.
+        What should you use as a feature? </p>
+    <input type="radio" id="label" name="train" value="VALUE1">
+    <label for="label">the number of taxi journeys in the dataset</label>
+    <BR></BR>
+    <input type="radio" id="feature" name="train" value="VALUE2">
+    <label for="feature">the trip distance of individual taxi journeys</label>
+    <br>
+    <input type="radio" id="dataset" name="train" value="VALUE3">
+    <label for="dataset">the fare of individual taxi journeys</label>
+</div>
+
+<div class="question">
+    <p>5.You need to predict the sea level in meters for the next 10 years.
+        Which type of machine learning should you use?</p>
+    <select id="question5">
+        <option value="">--Select an answer--</option>
+        <option value="Regression">Regression</option>
+        <option value="Binary Classification">Classification</option>
+        
+        <option value="Both a,b & c">Both a & b</option>
+    </select>
+</div>
+<div class="question">
+    <p>6.Which Languages used in machine learning for write custom code?</p>
+    <input type="checkbox" id="Java" value="Java">
+    <label for="typeRegression">Java</label>
+    
+    <input type="checkbox" id="Python" value="Python">
+    <label for="Python">Python</label>
+    
+    <input type="checkbox" id="R" value="R">
+    <label for="R">R</label>
+    
+    
+</div>
+
+<div class="question">
+    <p>7. A banking system that predicts whether a loan Will be repaid is an example or
+        the type of machine learning</p>
+    <select id="question7">
+        <option value="">--Select an answer--</option>
+        <option value="Classification">Classification</option>
+        
+        <option value="Regression">Regression</option>
+    </select>
+</div>
+<div class="question">
+    <p>8.Predicting how many hours of overtime a delivery person will work based on
+        the number of order received is an example of</p>
+    <select id="question8">
+        <option value="">--Select an answer--</option>
+        <option value="Classification">Classification</option>
+        
+        <option value="Regression">Regression</option>
+    </select>
+</div>
+<div class="question">
+    <p>9. Automated machine learning implements machine learning solutions
+        without the need for programming experience. </p>
+    <input type="radio" id="NO" name="AI" value="NO">
+    <label for="NO">NO</label>
+    
+    <input type="radio" id="Yes" name="AI" value="Yes">
+    <label for="Yes">Yes</label>
+    
+    
+</div>
+<div class="question"></div>
+  10:<p> <img src="classification.jpg" alt=""><br>There are [answer choice] correctly predicted positives.</p>
+    <input type="radio" id="5" name="images" value="5">
+    <label for="stylar">5</label>
+    
+    <input type="radio" id="Elevenlabs" name="images" value="11">
+    <label for="Elevenlabs">11</label>
+    <input type="radio" id="Elevenlabs" name="images" value="1033">
+    <label for="Elevenlabs">1033</label>
+    
+    
+</div>
+
+
+        
+        <button onclick="checkAnswers()">submit</button>
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
