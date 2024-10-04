@@ -5,7 +5,7 @@ body {
 }
 
 .container {
-    background-color:pink;
+    background-color:white;
     padding: 20px;
     max-width: 800px;
     margin: 0 auto;
@@ -30,6 +30,8 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    width:40%;
+    height:20%;
 }
 
 button:hover {
