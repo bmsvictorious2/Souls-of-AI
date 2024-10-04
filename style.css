@@ -1,11 +1,11 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: black;
     padding: 20px;
 }
 
 .container {
-    background-color: rgb(229, 241, 253);
+    background-color:pink;
     padding: 20px;
     max-width: 800px;
     margin: 0 auto;
