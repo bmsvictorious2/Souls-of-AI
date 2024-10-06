@@ -12,7 +12,7 @@
         <h1>Test No 2</h1>
         <div class="name-section">
             <label for="studentName">Enter your name:</label>
-            <input type="text" id="studentName" placeholder="Your Name">
+            <input style="height:40px; width: 180px;" type="text" id="studentName" placeholder="Your Name">
         </div>
 
         <!-- Display Student's Name -->
@@ -20,12 +20,13 @@
 
         <!-- Question 1 (Yes/No using checkboxes) -->
         <div class="question">
-            <p>1. which method in Azure Provide drag & drop interface for train your model?</p>
-            <input type="checkbox" id="Automated ML" value="Artificial intelligence">
-            <label for="artificialIntelligence">Automated ML</label>
+            <p>1. Which method in Azure provides a drag & drop interface for training your model?</p>
+            <input type="checkbox" id="automatedML" value="Automated ML">
+            <label for="automatedML">Automated ML</label>
             
-            <input type="checkbox" id="Azure Machine Learning designer" value="Artical Intelligent">
-            <label for="articalIntelligent">Azure Machine Learning designer</label>
+            <input type="checkbox" id="azureMLDesigner" value="Azure Machine Learning designer">
+            <label for="azureMLDesigner">Azure Machine Learning Designer</label>
+            
         </div>
         
         <!-- Question 2 (Dropdown) -->
@@ -125,7 +126,7 @@
     
     
 </div>
-<div class="question"></div>
+<div class="question">
   10:<p> <img src="classification.jpg" alt=""><br>There are [answer choice] correctly predicted positives.</p>
     <input type="radio" id="5" name="images" value="5">
     <label for="stylar">5</label>
@@ -137,9 +138,111 @@
     
     
 </div>
+<div class="question">
+    11:<p> <img src="classification.jpg" alt=""><br>There are [answer choice] False negative.</p>
+      <input type="radio" id="5" name="image" value="5">
+      <label for="stylar">5</label>
+      
+      <input type="radio" id="Elevenlabs" name="image" value="11">
+      <label for="Elevenlabs">11</label>
+      <input type="radio" id="Elevenlabs" name="image" value="1033">
+      <label for="Elevenlabs">1033</label>
+      
+      
+  </div>
+  <div class="question">
+    <p>12.Azure Machine learning designer lets you create machine learning model by</p>
+    <input type="radio" id="NO" name="At" value="NO">
+    <label for="NO">Adding & connecting modules on visual canvas</label>
+    
+    <input type="radio" id="Yes" name="At" value="Yes">
+    <label for="Yes">Use a code-First notebook experience</label>
+    
+    
+</div>
+<div class="question">
+    <p>13.How can split data?</p>
+    <input type="radio" id="NO" name="Am" value="NO">
+    <label for="NO">Randomly split data in column</label>
+    
+    <input type="radio" id="Yes" name="Am" value="Yes">
+    <label for="Yes">Randomly split data in row</label>
+    
+    
+</div>   
 
 
+<div class="question">
+    
+    <p>14.When training a model, Why should you randomly split the row into separate subset?</p>
+    <input type="radio" id="NO" name="Ap" value="NO">
+    <label for="NO">To test the model by using data that was not used to train the model</label><BR></BR>
+    
+    <input type="radio" id="Yes" name="Ap" value="Yes">
+    <label for="Yes">To Train the model twice to attain better performance</label>
+    
+</div>
+<div class="question">
+    
+    <p>15.Organizing documents into groups based on similarities of the text contained in the document is an example of?</p>
+    <input type="radio" id="NO" name="An" value="NO">
+    <label for="NO">Classification</label>
+    
+    <input type="radio" id="Yes" name="An" value="Yes">
+    <label for="Yes">Clustering</label>
+    
+</div>
+
+<div class="question">
+    <p>16.What type of machine learning should you used to identify group of people who have similar purchasing habbits?</p>
+    <select id="question16">
+        <option value="">--Select an answer--</option>
+        <option value="Regression">Regression</option>
         
+        <option value="Clustering">Clustering</option>
+    </select>
+</div>
+<div class="question">
+    <p>17. Predict whether a student will complete a university course?</p>
+    <select id="question17">
+        <option value="">--Select an answer--</option>
+        <option value="Regression">Regression</option>
+        
+        <option value="Classification">Classification</option>
+    </select>
+</div>
+<div class="question">
+    <p>18. Which layer used to enter data in artificial neural network?</p>
+    <select id="question18">
+        <option value="">--Select an answer--</option>
+        <option value="Input">Input Layer</option>
+        
+        <option value="Output">Output Layer</option>
+    </select>
+</div>
+<div class="question">
+    
+    <p>19.Which activation function most commonly used in artificial neural network of deep learning?</p>
+    <input type="radio" id="NO" name="Ad" value="Relu">
+    <label for="NO">Relu</label>
+    
+    <input type="radio" id="Yes" name="Ad" value="Sigmoid">
+    <label for="Yes">Sigmoid</label>
+    
+</div>
+<div class="question">
+    20:<p> <img src="1.png" alt=""><br>Calculate Accuracy using confusion metrices?.</p>
+      <input type="radio" id="5" name="img" value="0.67">
+      <label for="stylar">0.67</label>
+      
+      <input type="radio" id="Elevenlabs" name="img" value="0.59">
+      <label for="Elevenlabs">0.59</label>
+      <input type="radio" id="Elevenlabs" name="img" value="2">
+      <label for="Elevenlabs">0.2</label>
+      
+      
+  </div>
+
         <button onclick="checkAnswers()">submit</button>
         <p id="result"></p>
     </div>
