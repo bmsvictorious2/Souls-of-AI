@@ -10,14 +10,15 @@ function checkAnswers() {
      document.getElementById("displayName").innerText = "Student Name: Not Provided";
  }
     // Question 1 (Yes/No)
-    const no1 = document.getElementById("Automated ML").checked;
-    const yes1 = document.getElementById("Azure Machine Learning designer").checked;
+    const automatedMLChecked = document.getElementById("automatedML").checked;
+    const azureMLDesignerChecked = document.getElementById("azureMLDesigner").checked;
+    
 
-    // Correct answer for Question 1 is "Artificial intelligence"
-    if (yes1 && !no1) {
+    if (azureMLDesignerChecked && !automatedMLChecked) {
         totalMarks += 5;
+       
     }
-
+    
     // Question 2 (Dropdown)
     const question2 = document.getElementById("question2").value;
 
@@ -74,8 +75,71 @@ const isSupervisedChecked = document.getElementById("Python").checked;
     if (selecWork && selecWork.value === "11") {
         totalMarks += 5;
     }
+    const selecWorke = document.querySelector('input[name="image"]:checked');
+
+    // Correct answer for Question 1 is "Computer Vision"
+    if (selecWorke && selecWorke.value === "5") {
+        totalMarks += 5;
+    }
+    const selectdWork = document.querySelector('input[name="At"]:checked');
+
+    // Correct answer for Question 1 is "Computer Vision"
+    if (selectdWork && selectdWork.value === "NO") {
+        totalMarks += 5;
+    }
+    const seectdWork = document.querySelector('input[name="Am"]:checked');
+
+    // Correct answer for Question 1 is "Computer Vision"
+    if (seectdWork && seectdWork.value === "Yes") {
+        totalMarks += 5;
+    }
+    const see = document.querySelector('input[name="Ap"]:checked');
+
+    // Correct answer for Question 1 is "Computer Vision"
+    if (see && see.value === "NO") {
+        totalMarks += 5;
+    }
+    const seet = document.querySelector('input[name="An"]:checked');
+
+    // Correct answer for Question 1 is "Computer Vision"
+    if (seet && seet.value === "Yes") {
+        totalMarks += 5;
+    }
+    const question16 = document.getElementById("question16").value;
+
+    // Correct answer for Question 2 is "label"
+    if (question16 === "Clustering") {
+        totalMarks += 5;
+    }
+    const question17 = document.getElementById("question17").value;
+
+    // Correct answer for Question 2 is "label"
+    if (question17 === "Classification") {
+        totalMarks += 5;
+    }
+    const question18 = document.getElementById("question18").value;
+
+    // Correct answer for Question 2 is "label"
+    if (question18 === "Input") {
+        totalMarks += 5;
+    }
+    const seed = document.querySelector('input[name="Ad"]:checked');
+
+    // Correct answer for Question 1 is "Computer Vision"
+    if (seed && seed.value === "Relu") {
+        totalMarks += 5;
+    }
+    const seleWork = document.querySelector('input[name="img"]:checked');
+
+    // Correct answer for Question 1 is "Computer Vision"
+    if (seleWork && seleWork.value === "0.59") {
+        totalMarks += 5;
+    }
     // Display the result
     const resultPage = `result.html?name=${encodeURIComponent(studentName)}&marks=${totalMarks}`;
     window.location.href = resultPage;
+   
+
 }
+
 
